@@ -1,7 +1,18 @@
-.nav{
-float: left;
+.header {
+  height: 100rpx;
+  width: 750rpx;
+  background: #eb4450;
+  display: flex;
 }
-.item{
-  width: 25%;
-  /* text-align: center; */
+
+.header .searchInp {
+  align-items: center;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 700rpx;
+  border-radius: 5rpx;
+  color: #767676;
 }

@@ -1,7 +1,6 @@
 <!--index.wxml-->
-<view class="nav">
-  <view class="item">项目</view>
-  <view class="item">文件</view>
-  <view class="item">编辑</view>
-  <view class="item">工具</view>
+<view class="header">
+  <view class="searchInp">
+    搜索
+  </view>
 </view>
