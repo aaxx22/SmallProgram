@@ -1,0 +1,7 @@
+.nav{
+float: left;
+}
+.item{
+  width: 25%;
+  /* text-align: center; */
+}
