@@ -1,0 +1,18 @@
+.search {
+  height: 100rpx;
+  width: 750rpx;
+  background: #eb4450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .searchInp {
+  background: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 700rpx;
+  border-radius: 10rpx;
+  color: #767676;
+}

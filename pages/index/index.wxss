@@ -1,4 +1,4 @@
-.header {
+/* .header {
   height: 100rpx;
   width: 750rpx;
   background: #eb4450;
@@ -15,4 +15,63 @@
   width: 700rpx;
   border-radius: 5rpx;
   color: #767676;
+} */
+
+
+.swiper swiper {
+  height: 340rpx;
 }
+.nav{
+  margin-top: 10rpx;
+  display: flex;
+  height: 140rpx;
+}
+.nav .nav-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+}
+.nav .nav-item .nav-data{
+  width: 128rpx;
+  height: 140rpx;
+}
+
+.floor{
+  margin-top: 40rpx;
+}
+.floor .floor-title{
+  height: 60rpx;
+}
+.floor .floor-content{
+  margin-top: 10rpx;
+  display: flex;
+}
+.floor .floor-content .content-left{
+  height: 386rpx;
+  width: 235rpx;
+  margin: 0 15rpx;
+}
+.floor .floor-content .content{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.floor .floor-content .content-right{
+  width: 230rpx;
+  height: 188rpx;
+  margin-right: 15rpx;
+}
+.floor .floor-content .content-right:nth-child(1),
+.floor .floor-content .content-right:nth-child(2){
+  margin-bottom: 12rpx;
+}
+.floor .floor-content navigator{
+  height: 100%;
+  width: 100%;
+}
+/* .floor .floor-content .content-right content-item{
+
+  background: red;
+} */
+/* .floor .floor-content .content-right content-item  */

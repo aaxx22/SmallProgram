@@ -1,6 +1,65 @@
 <!--index.wxml-->
-<view class="header">
-  <view class="searchInp">
-    搜索
+
+<!-- 首页开始 -->
+<view>
+  <!-- 首页头部开始 -->
+  <view class="header">
+    <search-input />
+  </view>
+  <!-- 首页头部结束 -->
+
+  <!-- 轮播图开始 -->
+  <view class="swiper">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+      <swiper-item class="swiper_item" wx:for="{{swiperList}}" wx:key="goods_id" open_type="{{open_type}}">
+        <navigator url="{{item.navigator_url}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+
+<!-- 分类开始 -->
+<view class="nav">
+  <view class="nav-item" wx:for="{{navList}}" wx:key="index">
+    <view class="nav-data">
+      <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+
+    </view>
   </view>
 </view>
+<!-- 分类结束 -->
+
+<!-- 楼层开始 -->
+<view class="floor" wx:for="{{floorList}}" wx:key="index">
+  <view class="floor-title">
+    <image src="{{item.floor_title.image_src}}"></image>
+  </view>
+
+  <view class="floor-content">
+
+        <view class="content-left" wx:key="index" wx:if="{{index === 0}}" wx:for="{{item.product_list}}">
+        <navigator url="item.navigator_url" open_type="item.open_type">
+          <image src="{{item.image_src}}"></image>
+        
+        </navigator>
+        </view>
+        <view class="content">
+          <view class="content-right" wx:key="index" wx:if="{{index > 0}}" wx:for="{{item.product_list}}">
+            <navigator class="atag" url="item.navigator_url" open_type="item.open_type">
+              <image src="{{item.image_src}}" mode="scaleToFill"></image>
+            </navigator>
+          </view>
+        </view>
+
+  </view>
+
+</view>
+<!-- 楼层结束 -->
+
+</view>
+<!-- 首页结束 -->
